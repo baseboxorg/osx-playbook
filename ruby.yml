@@ -9,7 +9,18 @@
       gem: name=librarian-chef
     - name: ensure chef is installed
       gem: name=chef
+    - name: ensure librarian-ansible is installed
+      gem: name=librarian-ansible
+    - name: ensure ansible is installed
+      gem: name=ansible 
+      
     - name: ensure knife-solo is installed
       gem: name=knife-solo
-    - name: ensure capistrano is installed
-      gem: name=capistrano
+    
+kitchen-vagrant
+vagrant-hostmanager
+vagrant-salt
+vagrant-ansible
+vagrant-aws
+vagrant-digitalocean
+vagrant-snap

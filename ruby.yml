@@ -13,14 +13,19 @@
       gem: name=librarian-ansible
     - name: ensure ansible is installed
       gem: name=ansible 
-      
     - name: ensure knife-solo is installed
       gem: name=knife-solo
-    
-kitchen-vagrant
-vagrant-hostmanager
-vagrant-salt
-vagrant-ansible
-vagrant-aws
-vagrant-digitalocean
-vagrant-snap
+    - name: ensure knife-ec2 is installed
+      gem: name=knife-ec2
+    - name: ensure test-kitchen is installed
+      gem: name=test-kitchen
+    - name: ensure kitchen-vagrant is installed
+      gem: name=kitchen-vagrant
+    - name: ensure kitchen-ec2 is installed
+      gem: name=kitchen-ec2  
+    - name: ensure kitchen-docker is installed
+      gem: name=kitchen-docker  
+    - name: ensure kitchen-digitalocean is installed
+      gem: name=kitchen-digitalocean  
+    - name: ensure bundler is installed
+      gem: name=bundler

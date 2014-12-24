@@ -10,7 +10,10 @@ chmod -x ./inventory
 ansible-playbook all.yml
 
 # run only the specific playbooks
-# ansible-playbook {{name}}.yml
+# $ansible-playbook {{name}}.yml
+
+# If certain casks are missing try
+# $brew update && brew upgrade brew-cask
 
 
 PROJECT_DIR=`mktemp -d "/tmp/ansible-osx-developer.XXXXXXXXXX"`

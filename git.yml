@@ -1,8 +1,8 @@
 ---
 - hosts: all
   vars:
-    user_email: luis.munoz.hdez@gmail.com
-    user_name: Luis Hdez
+    user_email: anthony.lai@hostname.io
+    user_name: Anthony Lai
   tasks:
     - name: Copy global gitconfig
       template: src=templates/git/gitconfig dest=~/.gitconfig
